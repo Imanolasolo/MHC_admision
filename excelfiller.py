@@ -4,6 +4,18 @@ from openpyxl import load_workbook
 import sqlite3
 import os
 
+st.set_page_config(
+    page_title="Formulario 001 ADMISION",
+    page_icon="🩺",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://wa.me/5930993513082?text=Solicito%20ayuda%20con%20la%20app%20MHC',
+        'Report a bug': "https://wa.me/5930993513082?text=Solicito%20ayuda%20con%20la%20app%20MHC",
+        'About': "# App creada por CodeCodix"
+    }
+)
+
 # Función para conectar a la base de datos y obtener los pacientes
 def get_patients():
     conn = sqlite3.connect('hospital.db')

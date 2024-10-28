@@ -269,3 +269,11 @@ def admisionista_dashboard():
         manage_patients()
     elif option == "Gestión de Acompañantes":
         manage_companions()
+
+    st.sidebar.markdown(
+    '<a href="https://001-admision.streamlit.app" target="_blank" style="text-decoration: none;">'
+    '<div style="background-color: white; color: white; padding: 10px; text-align: center; border-radius: 5px;">'
+    'Generar Formulario 001 ADMISION'
+    '</div></a>', 
+    unsafe_allow_html=True
+)
